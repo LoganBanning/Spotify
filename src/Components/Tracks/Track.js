@@ -25,7 +25,7 @@ const Track = (props) => {
     return (
       <div key={track.id}>
         <Link to={`/playlist/${track.id}`}>
-          <img className="image" src={track.pic} />
+          <img className="image" src={track.pic} alt='track-picture' />
         </Link>
         <Link to={`/album/${track.id}`}>
           <h3 className="title">{track.title}</h3>
