@@ -113,7 +113,7 @@ app.get("/auth/callback", (req, res) => {
   request.post(authOptions, function (error, response, body) {
     if (!error && response.statusCode === 200) {
       req.session.token = body.access_token;
-      res.redirect('http://localhost:3000/homepage');
+      res.redirect('http://localhost:3000/homepage'); 
     }
   });
 });
