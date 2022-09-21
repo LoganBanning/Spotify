@@ -4,7 +4,7 @@ import Logo from "../../images/Spotify_Logo_RGB_White.png";
 
 const LandingPageComponent = (props) => {
   const {
-    SPOTIFY_CLIENT_ID,
+    REACT_APP_CLIENT_ID,
     REACT_APP_AUTHORIZE_URL,
     REACT_APP_REDIRECT_URL,
   } = process.env;
