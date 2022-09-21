@@ -23,9 +23,6 @@ const SideBarComponent = () => {
             Your Library
           </button>
         </Link>
-        <Link to="/merch">
-          <button className="side-bar-btn">Merch</button>
-        </Link>
       </div>
       <div className="playlist-liked-songs">
         <Link to="/liked-songs">
