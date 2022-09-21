@@ -9,7 +9,7 @@ export const useToken = () => {
   useEffect(() => {
     async function getToken() {
       try {
-        const response = await axios.get("/auth/token");
+        const response = await axios.get("https://starfish-app-bv92g.ondigitalocean.app/auth/token");
         setToken(response.data.access_token);
       } catch {
         return;
