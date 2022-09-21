@@ -18,9 +18,11 @@ export const useToken = () => {
 
     getToken();
   }, []);
-
+  console.log('token', token);
   return token;
 };
+
+
 
 export const useProfile = () => {
   const [userInfo, setUserInfo] = useState([]);
