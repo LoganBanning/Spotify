@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
+// const backEndUrl = process.env.REACT_APP_BACKEND_URL;
+
 export const SpotifyURL = "https://api.spotify.com/v1";
 
 export const useToken = () => {
@@ -10,6 +12,7 @@ export const useToken = () => {
     async function getToken() {
       try {
         const response = await axios.get("/api/auth/token");
+        console.log('res', response)
         setToken(response.data.access_token);
       } catch {
         return;
@@ -18,7 +21,6 @@ export const useToken = () => {
 
     getToken();
   }, []);
-  console.log('token', token);
   return token;
 };
 
